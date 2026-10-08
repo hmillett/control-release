@@ -1,0 +1,1216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control &amp; Release — A Guided Daily Journal</title>
+    <meta
+      name="description"
+      content="Control what you can. Release what you can't. A guided daily journal for a lighter mind, featuring dual-page bilateral layouts and tactile perforated tear-out rituals."
+    />
+    <meta
+      property="og:title"
+      content="Control &amp; Release — A Guided Daily Journal"
+    />
+    <meta
+      property="og:description"
+      content="Control what you can. Release what you can't. A guided daily journal for a lighter mind, featuring dual-page bilateral layouts and tactile perforated tear-out rituals."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Pure Vanilla CSS Stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Top Announcement Bar -->
+    <aside class="announcement-bar" aria-label="Announcement">
+      <span class="material-symbols-outlined">spa</span>
+      <span>Now Available on Amazon & Etsy</span>
+      <span class="material-symbols-outlined">spa</span>
+    </aside>
+
+    <!-- Main Navigation Header -->
+    <header class="site-header">
+      <div class="container nav-row">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-logo" aria-label="Control & Release Home">
+          <div class="brand-icon-circle">
+            <span class="material-symbols-outlined">nature</span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Control &amp; Release</span>
+            <span class="brand-sub">A Guided Journal</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="#about" class="nav-link">About the Journal</a>
+          <a href="#practice" class="nav-link">The Practice</a>
+          <a href="#the-spread" class="nav-link">Inside the Pages</a>
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <a
+            href="https://www.amazon.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-buy-amazon"
+          >
+            <span>Buy on Amazon</span>
+            <span class="material-symbols-outlined">north_east</span>
+          </a>
+          <a
+            href="https://www.amazon.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-buy-amazon"
+          >
+            <span>Buy on Etsy</span>
+            <span class="material-symbols-outlined">north_east</span>
+          </a>
+          <!-- <div class="profile-avatar" title="Holden Millett">
+            <img src="https://lh3.googleusercontent.com/aida/AEtjO1U5AHierlaGAlZ8gIU4lIkzrp1M4zSOrxzUnHADB010_zOYnydAICZbTBkxN6IEzluVCvDtIVma8NHg9GY-S8kqU_7kxCwRmdOCndF1h7EhsCterDJy8dacpZAsCFWu9cW1ChCjcrB3Koq3IGW5VkTGQ8jm_asksCfMMfP1K7BxgbVhtGmESQtj48IfvAU4G_t25YuNt22D0UCKTFx8rJn21LttSzn5J9boa10D9aUSBBFYW_Cl4sjEO7_n0wX6gdKXK54yfI9ZxQ" alt="User Profile" />
+          </div> -->
+          <button
+            class="mobile-menu-btn"
+            id="mobile-toggle"
+            aria-label="Toggle mobile menu"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <nav
+        class="mobile-nav-drawer"
+        id="mobile-drawer"
+        aria-label="Mobile Navigation"
+      >
+        <a href="#about" class="nav-link" onclick="closeMobileMenu()"
+          >About the Journal</a
+        >
+        <a href="#practice" class="nav-link" onclick="closeMobileMenu()"
+          >The Practice</a
+        >
+        <a href="#the-spread" class="nav-link" onclick="closeMobileMenu()"
+          >Inside the Pages</a
+        >
+        <a href="#reviews" class="nav-link" onclick="closeMobileMenu()"
+          >Reviews</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <!-- Atmosphere Background & Glows -->
+      <div class="hero-wrapper">
+        <div class="glow-ambient-1" aria-hidden="true"></div>
+        <div class="glow-ambient-2" aria-hidden="true"></div>
+
+        <!-- 1. HERO SECTION -->
+        <section class="container hero-section" id="hero">
+          <div class="hero-grid">
+            <!-- Left Copy -->
+            <div class="hero-content">
+              <!-- Rating Pill -->
+              <div class="rating-pill">
+                <div class="stars" aria-label="5 stars rating">
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                </div>
+                <!-- <span class="rating-text">4.9 out of 5 Stars on Amazon</span>
+                <span class="rating-count">(500+ Verified Reviews)</span> -->
+              </div>
+
+              <!-- Eyebrow -->
+              <div class="eyebrow">
+                <span class="material-symbols-outlined">spa</span>
+                <span>A Guided Journal for a Lighter Mind</span>
+              </div>
+
+              <!-- Headline -->
+              <h1 class="hero-title">
+                Control what you can.<br />
+                <span class="italic-release">Release</span> what you can't.
+              </h1>
+
+              <!-- Subtitle -->
+              <p class="hero-description">
+                We spend so much energy trying to control things that were never
+                ours to carry. <strong>Control &amp; Release</strong> provides a
+                daily practice to separate what is within your power from what
+                you must let go.
+              </p>
+
+              <!-- CTA Group -->
+              <div class="cta-group">
+                <a
+                  href="https://www.amazon.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-primary-order"
+                >
+                  <span>Order on Amazon — $19.99</span>
+                  <span class="material-symbols-outlined">north_east</span>
+                </a>
+                <button
+                  type="button"
+                  class="btn-secondary-preview"
+                  id="btn-open-preview"
+                >
+                  <span class="material-symbols-outlined">menu_book</span>
+                  <span>Preview the Two-Page Practice</span>
+                </button>
+              </div>
+
+              <!-- Trust Badges -->
+              <div class="hero-badges">
+                <div class="hero-badge-item badge-blue">
+                  <span class="material-symbols-outlined">verified</span>
+                  <span>Tear-away release pages</span>
+                </div>
+                <div class="hero-badge-item badge-green">
+                  <span class="material-symbols-outlined">check_circle</span>
+                  <span>50 guided exercises</span>
+                </div>
+                <div class="hero-badge-item badge-gold">
+                  <span class="material-symbols-outlined">autorenew</span>
+                  <span>Premium 28 lb paper</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Visual / Book Cover Mockup Card -->
+            <div class="hero-visual-wrapper">
+              <div class="hero-halo" aria-hidden="true"></div>
+              <div class="hero-card">
+                <div class="hero-img-box">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRZ_76DdZ1mnOKbyUISh2zP744b5kv2NTpfPIAKhrG-GN54UUhN3sjEQWUZzJwowl47SXMXcg08d8qJBodePKuIyaRorIobpFNRRe1rJfeeXdBuJPm-qIIoWih-_iSX6XhTZeOM8Hu1Lh0DkhFk4SWWPzMUbfHN8J9e2Nu52n9r2raCMKb9ibHebDIH1r64dejQGVa-b3BmBuSovwLxHgLhTQ-tvLYwWCjhJ2u855NwKlHXiIXWA57zUETkIQ5_xNDrA"
+                    alt="Control &amp; Release Journal Cover"
+                  />
+
+                  <!-- Floating Tactile Badge Overlay -->
+                  <div
+                    class="tactile-badge"
+                    id="tactile-badge-btn"
+                    role="button"
+                    tabindex="0"
+                    title="Click to see perforated page detail"
+                  >
+                    <div class="tactile-badge-left">
+                      <div class="tactile-icon-circle">
+                        <span class="material-symbols-outlined"
+                          >content_cut</span
+                        >
+                      </div>
+                      <div>
+                        <div class="tactile-title">
+                          Perforated Tear-Out Edge
+                        </div>
+                        <div class="tactile-sub">
+                          Physically release what you can't carry
+                        </div>
+                      </div>
+                    </div>
+                    <span class="material-symbols-outlined tactile-badge-arrow"
+                      >arrow_forward</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 2. THE CORE PHILOSOPHY SECTION -->
+      <section class="section-philosophy" id="about">
+        <div class="container">
+          <div class="section-header-center">
+            <span class="eyebrow">The Core Philosophy</span>
+            <h2 class="section-title">
+              Focus your energy where it can make a difference.<br />
+              <span class="italic-sub">Let go of where it can't.</span>
+            </h2>
+            <div class="divider-line" aria-hidden="true"></div>
+            <blockquote class="quote-block">
+              “We often spend so much energy trying to change what is out of our
+              control — other people’s opinions, the past, outcomes,
+              uncertainty, and things that haven’t happened yet. In the process,
+              we overlook the things that are actually within our influence: our
+              actions, our preparation, our boundaries, our attention, our
+              responses, and our next choices.”
+            </blockquote>
+          </div>
+
+          <!-- Dual Side-by-Side Cards (Control vs. Release) -->
+          <div class="dual-cards-grid">
+            <!-- Left: CONTROL -->
+            <article class="dual-card card-control">
+              <div class="card-top">
+                <div class="card-heading-row">
+                  <div class="card-icon-title">
+                    <div class="card-icon-circle">
+                      <span class="material-symbols-outlined">eco</span>
+                    </div>
+                    <div>
+                      <h3 class="card-title">Control</h3>
+                      <p class="card-subtitle">What I can control.</p>
+                    </div>
+                  </div>
+                  <span class="card-tag">Your Domain</span>
+                </div>
+                <p class="card-intro">
+                  This is where you identify what is actually within your reach.
+                  You don’t need to control the entire situation — only your
+                  next small step.
+                </p>
+                <ul class="bullet-list">
+                  <li class="bullet-item">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <span><strong>What you say</strong></span>
+                  </li>
+                  <li class="bullet-item">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <span><strong>How you act</strong></span>
+                  </li>
+                  <li class="bullet-item">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <span><strong>How you respond</strong></span>
+                  </li>
+                  <li class="bullet-item">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <span><strong>Your next small action</strong></span>
+                  </li>
+                </ul>
+              </div>
+              <footer class="card-footer">
+                <span class="card-footer-action">
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                  <span>Grounded Agency</span>
+                </span>
+                <span>Step 1 / Page Left</span>
+              </footer>
+            </article>
+
+            <!-- Right: RELEASE -->
+            <article class="dual-card card-release">
+              <div class="card-top">
+                <div class="card-heading-row">
+                  <div class="card-icon-title">
+                    <div class="card-icon-circle">
+                      <span class="material-symbols-outlined">air</span>
+                    </div>
+                    <div>
+                      <h3 class="card-title">Release</h3>
+                      <p class="card-subtitle">What I can't control.</p>
+                    </div>
+                  </div>
+                  <span class="card-tag">Perforated Page</span>
+                </div>
+                <p class="card-intro">
+                  Releasing doesn’t mean you don’t care. It means redirecting
+                  your precious energy away from what you cannot fundamentally
+                  alter.
+                </p>
+                <ul class="bullet-list">
+                  <li class="bullet-item">
+                    <span class="material-symbols-outlined"
+                      >energy_savings_leaf</span
+                    >
+                    <span><strong>What someone thinks of you</strong></span>
+                  </li>
+                  <li class="bullet-item">
+                    <span class="material-symbols-outlined"
+                      >energy_savings_leaf</span
+                    >
+                    <span><strong>Past events &amp; decisions</strong></span>
+                  </li>
+                  <li class="bullet-item">
+                    <span class="material-symbols-outlined"
+                      >energy_savings_leaf</span
+                    >
+                    <span><strong>Future uncertainty</strong></span>
+                  </li>
+                  <li class="bullet-item">
+                    <span class="material-symbols-outlined"
+                      >energy_savings_leaf</span
+                    >
+                    <span><strong>Others’ emotions &amp; moods</strong></span>
+                  </li>
+                </ul>
+              </div>
+              <footer class="card-footer">
+                <span class="card-footer-action">
+                  <span class="material-symbols-outlined">content_cut</span>
+                  <span>Ready to be detached</span>
+                </span>
+                <span>Step 02 / Page Right</span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. INSIDE THE PAGES: SPREAD SHOWCASE -->
+      <section class="container section-inside-pages" id="the-spread">
+        <div class="inside-header-row">
+          <div class="inside-title-wrap">
+            <span class="eyebrow">Craftsmanship &amp; Interior</span>
+            <h2 class="section-title">
+              Inside the Pages: Built for Everyday Clarity
+            </h2>
+            <p class="inside-subtitle">
+              Every spread is engineered with quiet whitespace, intentional
+              prompts, and the physical act of detaching what exhausts you.
+            </p>
+          </div>
+          <!-- Tab Buttons -->
+          <div class="tabs-control" role="tablist">
+            <button
+              class="tab-btn active"
+              role="tab"
+              id="btn-tab-spread"
+              aria-selected="true"
+              onclick="switchTab('spread')"
+            >
+              Daily Spread
+            </button>
+            <button
+              class="tab-btn"
+              role="tab"
+              id="btn-tab-reflection"
+              aria-selected="false"
+              onclick="switchTab('reflection')"
+            >
+              Reflection Pages
+            </button>
+            <button
+              class="tab-btn"
+              role="tab"
+              id="btn-tab-wisdom"
+              aria-selected="false"
+              onclick="switchTab('wisdom')"
+            >
+              Wisdom Chapters
+            </button>
+          </div>
+        </div>
+
+        <!-- Showcase Box -->
+        <div class="spread-showcase-box">
+          <!-- TAB 1: DAILY SPREAD -->
+          <div class="tab-pane active" id="pane-spread" role="tabpanel">
+            <div class="spread-info">
+              <div class="eyebrow">
+                <span class="material-symbols-outlined">auto_stories</span>
+                <span>The Bilateral Layout</span>
+              </div>
+              <h3>The Open Book Dual Practice</h3>
+              <p>
+                When opened flat, the left side of the page is reserved for
+                grounded sovereignty (Control), while the right side is reserved
+                for conscious unburdening (Release).
+              </p>
+              <div class="numbered-features">
+                <div class="numbered-feature-item">
+                  <div class="num-circle circle-1">1</div>
+                  <div class="num-text">
+                    <h4>Lined Baseline Texture</h4>
+                    <p>
+                      Spaced at gentle intervals, giving your handwritten
+                      thoughts spacious breathing room.
+                    </p>
+                  </div>
+                </div>
+                <div class="numbered-feature-item">
+                  <div class="num-circle circle-2">2</div>
+                  <div class="num-text">
+                    <h4>Perforated Tear-Out Line</h4>
+                    <p>
+                      Micro-perforations down the right side allow you to safely
+                      fold and tear away what is not yours to hold.
+                    </p>
+                  </div>
+                </div>
+                <div class="numbered-feature-item">
+                  <div class="num-circle circle-3">3</div>
+                  <div class="num-text">
+                    <h4>One Small Action Prompt</h4>
+                    <p>
+                      Anchors your day into a singular, doable micro-choice
+                      rather than an endless to-do list.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="spread-visual-frame">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8IgzVHjR_ogL0VmWUVinIUUNxodDNgBbxMUpHBfrS7n2MoBpXTJtSx2SyJiYWHoF5tbxM5O__qWrYsT0uijytg16o61lhL0gI_pib-CKEIGjPsMdPQDPGVg41pN4wpaiHt83Q-6KjgQRh6JIefLMbN2WQtuLG0X8CldHWrMde9FDYmifo_GSWTdI0Q73GRF9-TATt8akSWJrSX4nPXvc7YOBLLS1B_RhbPQS1BIXn0bIOk2o56nmKZm_sIeG58qwt0A"
+                alt="Daily Spread Page Layout Design"
+              />
+              <div class="spread-badge-corner">Spread #01 Interior</div>
+            </div>
+          </div>
+
+          <!-- TAB 2: WEEKLY REFLECTION -->
+          <div class="tab-pane" id="pane-reflection" role="tabpanel">
+            <div class="spread-info">
+              <div class="eyebrow">
+                <span class="material-symbols-outlined">schedule</span>
+                <span>Periodic Check-Ins</span>
+              </div>
+              <h3>Take a Moment to Look Back</h3>
+              <p>
+                Guided reflection checkpoints invite you to observe your
+                experience with release worries that are beyond your control.
+              </p>
+              <div class="numbered-features">
+                <div class="numbered-feature-item">
+                  <div class="num-circle circle-1">✓</div>
+                  <div class="num-text">
+                    <h4>Track Cognitive Shifts</h4>
+                    <p>
+                      Uncover recurring mental loops and celebrate steady
+                      reductions in daily overthinking.
+                    </p>
+                  </div>
+                </div>
+                <div class="numbered-feature-item">
+                  <div class="num-circle circle-2">✓</div>
+                  <div class="num-text">
+                    <h4>Identify External Triggers</h4>
+                    <p>
+                      Recognize patterns where external noise or boundary leaks
+                      drained your battery.
+                    </p>
+                  </div>
+                </div>
+                <div class="numbered-feature-item">
+                  <div class="num-circle circle-3">✓</div>
+                  <div class="num-text">
+                    <h4>Reinforce Peace Gained</h4>
+                    <p>
+                      Document the tangible sense of relief that follows
+                      consistent physical surrender.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="spread-visual-frame">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7A90r-nGz1HtC_5GgDsHFZ8Hrfr67fhFS2XZF3BIoHfUQVpD0b66BsEeh6O_c9RufvQFChgHib1vIuA_GyvyGJaShv27-r_-fCJaCPExZYVuYEiNSqMWYLhDO_0ChfODlE4nQfqjCEf6EI9k8mRj5HcDCaAk_PVsHauwHHrGBadQXnBTGKdwExS_HLQeBkIB_Qmkx_1RVQWvYXLugzkcujrTCJUXGoffVFZVsPn5Iv9k-8z4cVrz_7ZhDkmFtIIw6YA"
+                alt="Take a moment to look back reflection page"
+              />
+              <div class="spread-badge-corner">Reflection Spread</div>
+            </div>
+          </div>
+
+          <!-- TAB 3: WISDOM CHAPTERS -->
+          <div class="tab-pane" id="pane-wisdom" role="tabpanel">
+            <div class="spread-info">
+              <div class="eyebrow">
+                <span class="material-symbols-outlined">psychology</span>
+                <span>Mindset Grounding</span>
+              </div>
+              <h3>“Release Doesn't Mean It Doesn't Matter”</h3>
+              <p>
+                Full-page grounding essays dispersed throughout the journal
+                reassure you that stepping back is not indifference; it is
+                wisdom and energetic stewardship.
+              </p>
+              <div class="quote-highlight-box">
+                <p>
+                  “You are allowing the world to breathe without your constant
+                  supervision.”
+                </p>
+              </div>
+              <div class="numbered-features" style="padding-top: 0.5rem"></div>
+            </div>
+            <div class="spread-visual-frame">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIj6w4Bt_t_fd4LreSqaCUpyVJEyAplelCknZzxP_z7Ta5KZpxR5ebYCZ9MWUhimL6ZZqHzneoRk4jbm6Ly6BL1IRwkM0npr-6oPYyf8d1MoVqeQbd6aNhbFzSDcJIIA0B9JrU40oqiFvKBypfirBE2pVzQrDcop9z5Zz7Ju6Y9C0Bt8FZ4AI1lPYI1_xfqTZSPLJi7MdRiQNtTzDMi2jP8nTFgi2b-GIrM4PzNshEhpeZefJGcnaG41F5Bdc6xPgc7Q"
+                alt="Wisdom Chapter Spread"
+              />
+              <div class="spread-badge-corner">Wisdom Chapter</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. THE 5-STEP DAILY PRACTICE -->
+      <section class="section-five-steps" id="practice">
+        <div class="container">
+          <div class="section-header-center">
+            <span class="eyebrow">A 5-Minute Ritual</span>
+            <h2 class="section-title">The 5-Step Practice</h2>
+            <p
+              style="
+                color: var(--color-on-surface-variant);
+                font-size: 1.05rem;
+                margin-top: 0.5rem;
+              "
+            >
+              Simple, grounded, and physical. Follow this sequential habit every
+              day to dismantle cognitive overwhelm.
+            </p>
+          </div>
+
+          <div class="five-steps-grid">
+            <!-- Step 1 -->
+            <article class="step-card">
+              <div>
+                <div class="step-card-header">
+                  <span class="step-number">01</span>
+                  <div class="step-icon-circle">
+                    <span class="material-symbols-outlined">pause_circle</span>
+                  </div>
+                </div>
+                <h3 class="step-card-title">Pause</h3>
+                <p class="step-card-body">
+                  Bring one situation to mind. It can be big or small — a
+                  conflict, an upcoming meeting, or an anxious feeling.
+                </p>
+              </div>
+              <div class="step-card-meta">
+                <span class="material-symbols-outlined">timer</span>
+                <span>1 minute stillness</span>
+              </div>
+            </article>
+
+            <!-- Step 2 -->
+            <article class="step-card">
+              <div>
+                <div class="step-card-header">
+                  <span class="step-number">02</span>
+                  <div class="step-icon-circle">
+                    <span class="material-symbols-outlined"
+                      >compare_arrows</span
+                    >
+                  </div>
+                </div>
+                <h3 class="step-card-title">Separate</h3>
+                <p class="step-card-body">
+                  Use the dual columns to untangle the knot. Distinguish what is
+                  directly within your control versus what is outside of it.
+                </p>
+              </div>
+              <div class="step-card-meta">
+                <span class="material-symbols-outlined">edit_note</span>
+                <span>Bilateral inquiry</span>
+              </div>
+            </article>
+
+            <!-- Step 3 -->
+            <article class="step-card">
+              <div>
+                <div class="step-card-header">
+                  <span class="step-number">03</span>
+                  <div class="step-icon-circle">
+                    <span class="material-symbols-outlined">task_alt</span>
+                  </div>
+                </div>
+                <h3 class="step-card-title">Act</h3>
+                <p class="step-card-body">
+                  Commit to one specific, manageable action within your sphere
+                  of control today. Reclaim your direct power.
+                </p>
+              </div>
+              <div class="step-card-meta">
+                <span class="material-symbols-outlined">bolt</span>
+                <span>Forward momentum</span>
+              </div>
+            </article>
+
+            <!-- Step 4 -->
+            <article class="step-card">
+              <div>
+                <div class="step-card-header">
+                  <span class="step-number">04</span>
+                  <div class="step-icon-circle">
+                    <span class="material-symbols-outlined">air</span>
+                  </div>
+                </div>
+                <h3 class="step-card-title">Release</h3>
+                <p class="step-card-body">
+                  Write down what you are deliberately choosing to surrender —
+                  judgments, past errors, or uncontrollable deadlines.
+                </p>
+              </div>
+              <div class="step-card-meta">
+                <span class="material-symbols-outlined">spa</span>
+                <span>Emotional exhale</span>
+              </div>
+            </article>
+
+            <!-- Step 5 -->
+            <article class="step-card step-card-tear">
+              <div>
+                <div class="step-card-header">
+                  <span class="step-number">05</span>
+                  <div class="step-icon-circle">
+                    <span class="material-symbols-outlined">content_cut</span>
+                  </div>
+                </div>
+                <h3 class="step-card-title">Tear It Away</h3>
+                <p class="step-card-body">
+                  Tear along the perforated edge. Hold it, acknowledge it, and
+                  discard or recycle it. You are unburdened.
+                </p>
+              </div>
+              <div class="step-card-meta">
+                <span class="material-symbols-outlined">delete_sweep</span>
+                <span>Physical detachment</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. TACTILE LUXURY & SPECIFICATIONS -->
+      <section class="container section-specs" id="craftsmanship">
+        <div class="specs-grid">
+          <!-- Left: Instagram Reel Post Mockup -->
+          <div class="reel-mockup-card">
+            <!-- Header -->
+            <div class="reel-header">
+              <div class="reel-user-info">
+                <div class="reel-user-avatar">
+                  <span class="material-symbols-outlined">eco</span>
+                </div>
+                <div class="reel-user-names">
+                  <div class="reel-username">
+                    controlandrelease <span class="following">• Following</span>
+                  </div>
+                  <div class="reel-audioname">Original audio</div>
+                </div>
+              </div>
+              <div class="reel-more-btn">•••</div>
+            </div>
+
+            <!-- Video / Reel Body with Cloud Sunset Background & Centered Quote -->
+            <div class="reel-video-body">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvyMNgA2QM6C7YJI73nEB9QEvf8amAdup2_C88ms7sXaw4fNCO492pfNhmhTK3aFbuRLNQGhSV1Qt8YAdGN-UKKWnYbWyTh2sUbRSeLu_J1AtOq9hADA9168MAVKiDhuR8pTTrIOtllRJqrPIogl8Jg8JcENOMyU5-EI1aolx1aFPEohvNilvyBmVvg_gjoRjpbtXcelsxAl3SCD9BD4zLfY4cIyuMdl9qIaW-iaqHt0lK0IImWTptuu-4k8dk1KVB0Q"
+                alt="Sunset reflections on control"
+              />
+              <div class="reel-sound-badge">
+                <span class="material-symbols-outlined">volume_off</span>
+              </div>
+            </div>
+
+            <!-- Reel Action Icons -->
+            <div class="reel-footer-actions">
+              <div class="reel-left-icons">
+                <span class="material-symbols-outlined" title="Like"
+                  >favorite</span
+                >
+                <span class="material-symbols-outlined" title="Comment"
+                  >chat_bubble</span
+                >
+                <span class="material-symbols-outlined" title="Share"
+                  >send</span
+                >
+                <span class="material-symbols-outlined" title="Repost"
+                  >sync_alt</span
+                >
+              </div>
+              <div class="reel-right-icons">
+                <span class="material-symbols-outlined" title="Save"
+                  >bookmark_border</span
+                >
+              </div>
+            </div>
+
+            <!-- Reel Caption -->
+            <div class="reel-caption-wrap">
+              <p>
+                <strong>controlandrelease</strong> Sometimes the hardest part
+                isn't knowing what you can control....
+                <span class="more-tag">more</span>
+              </p>
+              <span class="reel-timestamp">September 3</span>
+            </div>
+          </div>
+
+          <!-- Right: Specifications List -->
+          <div class="specs-content">
+            <div>
+              <span class="eyebrow">Mindfully Engineered</span>
+              <h2 class="section-title" style="margin-top: 0.25rem">
+                Tactile Luxury for Daily Grounding
+              </h2>
+              <p
+                style="
+                  font-size: 1.1rem;
+                  color: var(--color-on-surface-variant);
+                  margin-top: 0.5rem;
+                "
+              >
+                Every material was carefully selected to create a sensory oasis
+                in your hands — durable enough for your travels, soft enough to
+                comfort your tired thoughts.
+              </p>
+            </div>
+
+            <div class="specs-grid-cards">
+              <!-- Hardcover Linen -->
+              <div class="spec-mini-card">
+                <div class="spec-header-pill">
+                  <span class="material-symbols-outlined">texture</span>
+                  <span class="spec-title">Cardstock Cover</span>
+                </div>
+                <p class="spec-desc">
+                  Sage green natural cardstock cover with a simple, but elegant,
+                  design.
+                </p>
+              </div>
+
+              <!-- 120 GSM Paper -->
+              <div class="spec-mini-card">
+                <div class="spec-header-pill">
+                  <span class="material-symbols-outlined">description</span>
+                  <span class="spec-title">Premium 28 lb paper</span>
+                </div>
+                <p class="spec-desc">
+                  Thicker, high quality paper ensures that pages don't tear as
+                  you write down your thoughts.
+                </p>
+              </div>
+
+              <!-- Micro Perforated -->
+              <div class="spec-mini-card">
+                <div class="spec-header-pill">
+                  <span class="material-symbols-outlined">line_style</span>
+                  <span class="spec-title">Micro-Perforated Lines</span>
+                </div>
+                <p class="spec-desc">
+                  Engineered precision tear lines that pull cleanly away without
+                  tearing the journal spine.
+                </p>
+              </div>
+
+              <!-- 180 Entries -->
+              <div class="spec-mini-card">
+                <div class="spec-header-pill">
+                  <span class="material-symbols-outlined">book</span>
+                  <span class="spec-title">50 Guided Entries</span>
+                </div>
+                <p class="spec-desc">
+                  50 structured exercises for when you are feeling overwhelmed
+                  by things beyond your control.
+                </p>
+              </div>
+            </div>
+
+            <!-- CTA Row -->
+            <div class="specs-cta-row">
+              <a
+                href="https://www.amazon.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary-order"
+              >
+                <span>Get Your Copy on Amazon</span>
+                <span class="material-symbols-outlined">local_shipping</span>
+              </a>
+              <a
+                href="https://www.amazon.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary-order"
+              >
+                <span>Get Your Copy on Etsy</span>
+                <span class="material-symbols-outlined">local_shipping</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. VERIFIED REVIEWS SECTION -->
+      <section class="section-reviews" id="reviews">
+        <div class="container">
+          <div class="section-header-center">
+            <div class="stars" style="margin-bottom: 0.5rem">
+              <span class="material-symbols-outlined filled">star</span>
+              <span class="material-symbols-outlined filled">star</span>
+              <span class="material-symbols-outlined filled">star</span>
+              <span class="material-symbols-outlined filled">star</span>
+              <span class="material-symbols-outlined filled">star</span>
+            </div>
+            <h2 class="section-title">
+              See How Other Readers Have Found Clarity
+            </h2>
+          </div>
+
+          <div class="reviews-grid">
+            <!-- Review 1 -->
+            <article class="review-card">
+              <div>
+                <div class="review-card-stars">
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                </div>
+                <p class="review-quote">
+                  “Tearing the release side out is therapeutic. It gave me real,
+                  somatic permission to stop overthinking what I couldn’t fix.
+                  By far the most effective journal I’ve used in years.”
+                </p>
+              </div>
+              <footer class="review-author-wrap">
+                <div>
+                  <h3 class="author-name">Sarah M.</h3>
+                  <div class="author-role">
+                    <span class="material-symbols-outlined">verified</span>
+                    <span>Verified Amazon Buyer</span>
+                  </div>
+                </div>
+                <span class="review-time">2 weeks ago</span>
+              </footer>
+            </article>
+
+            <!-- Review 2 -->
+            <article class="review-card">
+              <div>
+                <div class="review-card-stars">
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                </div>
+                <p class="review-quote">
+                  “The quality of the paper, the sage linen cover, and the
+                  straightforward prompts made this a daily morning
+                  non-negotiable. I now recommend this to several of my anxiety
+                  therapy clients.”
+                </p>
+              </div>
+              <footer class="review-author-wrap">
+                <div>
+                  <h3 class="author-name">David K.</h3>
+                  <div class="author-role">
+                    <span class="material-symbols-outlined">verified</span>
+                    <span>Therapist &amp; Author</span>
+                  </div>
+                </div>
+                <span class="review-time">1 month ago</span>
+              </footer>
+            </article>
+
+            <!-- Review 3 -->
+            <article class="review-card">
+              <div>
+                <div class="review-card-stars">
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                  <span class="material-symbols-outlined filled">star</span>
+                </div>
+                <p class="review-quote">
+                  “Finally, a journal that isn’t overwhelming. It takes 5
+                  minutes and changes the tone of my entire workday. It stopped
+                  me from spiraling before 9 AM.”
+                </p>
+              </div>
+              <footer class="review-author-wrap">
+                <div>
+                  <h3 class="author-name">Elena R.</h3>
+                  <div class="author-role">
+                    <span class="material-symbols-outlined">verified</span>
+                    <span>Verified Buyer</span>
+                  </div>
+                </div>
+                <span class="review-time">3 weeks ago</span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FINAL HIGH-CONVERSION BOTTOM CALL TO ACTION -->
+      <section class="section-final-cta" aria-label="Purchase Call to Action">
+        <div class="cta-ambient-blob" aria-hidden="true"></div>
+        <div class="container cta-content-center">
+          <div class="cta-spa-icon">
+            <span class="material-symbols-outlined">spa</span>
+          </div>
+          <span class="cta-eyebrow">Your Next Peaceful Chapter</span>
+          <h2 class="cta-big-title">A lighter way forward starts today.</h2>
+          <p class="cta-subtitle">
+            Join other mindful individuals choosing clarity over worry. Reclaim
+            your headspace, one page at a time.
+          </p>
+          <a
+            href="https://www.amazon.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cta-btn-gold"
+          >
+            <span>Buy on Amazon Prime — In Stock ($18.99)</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <div class="cta-perks-row">
+            <span
+              ><span class="material-symbols-outlined">local_shipping</span>Free
+              30-day Returns</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 8. FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main-grid">
+          <!-- Left Brand Column -->
+          <div class="footer-col">
+            <div class="brand-logo">
+              <div class="brand-icon-circle">
+                <span class="material-symbols-outlined">eco</span>
+              </div>
+              <div class="brand-text">
+                <span class="brand-name">Control &amp; Release</span>
+              </div>
+            </div>
+            <p class="footer-desc">
+              An intentional sanctuary for grounded self-reflection, stillness,
+              and letting go of cognitive overwhelm. Helping you control what
+              you can and release what you can't.
+            </p>
+
+            <div class="footer-tagline-note"></div>
+          </div>
+
+          <!-- Center Navigation Column -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Navigation</h4>
+            <nav class="footer-links-list" aria-label="Footer Navigation">
+              <a href="#about" class="footer-link">About the Journal</a>
+              <a href="#practice" class="footer-link">The Practice Routine</a>
+              <a href="#the-spread" class="footer-link"
+                >Inside Look &amp; Spreads</a
+              >
+              <a href="#reviews" class="footer-link">Reader Reflections</a>
+            </nav>
+          </div>
+
+          <!-- Right Acquisition Column -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Acquisition</h4>
+            <p class="footer-desc">Available on Amazon and Etsy.</p>
+            <div>
+              <a
+                href="https://www.amazon.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-buy-amazon"
+              >
+                <span>Order via Amazon</span>
+                <span class="material-symbols-outlined">north_east</span>
+              </a>
+<br><br>
+              <a
+                href="https://www.amazon.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-buy-amazon"
+              >
+                <span>Order via Etsy</span>
+                <span class="material-symbols-outlined">north_east</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom-bar">
+          <p>© 2026 Control &amp; Release Journal Co.</p>
+          <div class="footer-bottom-links">
+            <a href="#about">Privacy Policy</a>
+            <a href="#practice">Terms of Intention</a>
+            <a href="#reviews">Press &amp; Inquiries</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Lightbox Modal for Two-Page Practice Preview -->
+    <div
+      class="modal-overlay"
+      id="preview-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modal-title">
+            The Bilateral Two-Page Spread
+          </h3>
+          <button
+            class="modal-close-btn"
+            id="modal-close-btn"
+            aria-label="Close modal"
+          >
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8IgzVHjR_ogL0VmWUVinIUUNxodDNgBbxMUpHBfrS7n2MoBpXTJtSx2SyJiYWHoF5tbxM5O__qWrYsT0uijytg16o61lhL0gI_pib-CKEIGjPsMdPQDPGVg41pN4wpaiHt83Q-6KjgQRh6JIefLMbN2WQtuLG0X8CldHWrMde9FDYmifo_GSWTdI0Q73GRF9-TATt8akSWJrSX4nPXvc7YOBLLS1B_RhbPQS1BIXn0bIOk2o56nmKZm_sIeG58qwt0A"
+            alt="High Resolution Spread View"
+          />
+          <p
+            style="
+              text-align: center;
+              font-size: 0.95rem;
+              color: var(--color-on-surface-variant);
+              max-width: 32rem;
+            "
+          >
+            On the left: your sphere of sovereign control. On the right:
+            perforated tear-away page for what you consciously surrender.
+          </p>
+          <a
+            href="https://www.amazon.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary-order"
+            style="margin-top: 0.5rem"
+          >
+            <span>Order on Amazon — $18.99</span>
+            <span class="material-symbols-outlined">north_east</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vanilla JavaScript for interactivity -->
+    <script>
+      // Tab switcher function
+      function switchTab(tabKey) {
+        const tabs = ["spread", "reflection", "wisdom"];
+        tabs.forEach(function (key) {
+          const btn = document.getElementById("btn-tab-" + key);
+          const pane = document.getElementById("pane-" + key);
+          if (key === tabKey) {
+            btn.classList.add("active");
+            btn.setAttribute("aria-selected", "true");
+            pane.classList.add("active");
+          } else {
+            btn.classList.remove("active");
+            btn.setAttribute("aria-selected", "false");
+            pane.classList.remove("active");
+          }
+        });
+      }
+
+      // Mobile Menu Toggle
+      const mobileToggle = document.getElementById("mobile-toggle");
+      const mobileDrawer = document.getElementById("mobile-drawer");
+
+      if (mobileToggle && mobileDrawer) {
+        mobileToggle.addEventListener("click", function () {
+          mobileDrawer.classList.toggle("open");
+        });
+      }
+
+      function closeMobileMenu() {
+        if (mobileDrawer) {
+          mobileDrawer.classList.remove("open");
+        }
+      }
+
+      // Preview Lightbox Modal
+      const modal = document.getElementById("preview-modal");
+      const openModalBtn = document.getElementById("btn-open-preview");
+      const tactileBadgeBtn = document.getElementById("tactile-badge-btn");
+      const closeModalBtn = document.getElementById("modal-close-btn");
+
+      function openModal() {
+        if (modal) {
+          modal.classList.add("open");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function closeModal() {
+        if (modal) {
+          modal.classList.remove("open");
+          document.body.style.overflow = "";
+        }
+      }
+
+      if (openModalBtn) openModalBtn.addEventListener("click", openModal);
+      if (tactileBadgeBtn) tactileBadgeBtn.addEventListener("click", openModal);
+      if (closeModalBtn) closeModalBtn.addEventListener("click", closeModal);
+
+      if (modal) {
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+      }
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && modal && modal.classList.contains("open")) {
+          closeModal();
+        }
+      });
+
+      // Active Navigation highlighting on scroll
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section[id]");
+        const scrollY = window.pageYOffset;
+
+        sections.forEach(function (current) {
+          const sectionHeight = current.offsetHeight;
+          const sectionTop = current.offsetTop - 120;
+          const sectionId = current.getAttribute("id");
+          const navLink = document.querySelector(
+            ".desktop-nav a[href*=" + sectionId + "]",
+          );
+
+          if (navLink) {
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+              navLink.classList.add("active");
+            } else {
+              navLink.classList.remove("active");
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
